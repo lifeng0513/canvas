@@ -1,0 +1,115 @@
+ul,li,body{
+    padding:0;margin:0;list-style: none;
+}
+body{
+    background: url("../images/11.jpg") no-repeat;
+}
+.xuanze{width:200px;height:55px;margin-top:50px;margin-left: 20px;
+    float:left;
+    /*background:url(../images/33.png)no-repeat center;*/
+    text-align: center;line-height: 50px;font-size: 30px;color:#343434;font-weight:900;
+}
+.container{
+    width:800px;height:auto;
+    /*border:1px solid #000;*/
+    margin:0 auto;border-radius: 5px;
+}
+.menu{
+    width:100%;height:40px;text-align: center;border-radius: 5px;
+    line-height: 40px;position: relative;z-index:2;cursor: pointer;
+    background: radial-gradient(#fff,#696969);
+}
+.menu .parent{
+    width:12.5%;height:100%;float:left;
+}
+.menu .parent div{
+    width:100%;height:100%;
+}
+.menu .parent .son{
+    width:100%;
+}
+
+.box{
+    width:100%;height:600px;position: relative;
+}
+.box .copy{
+    position: absolute;left:0;top:0;z-index:1;
+    width:100%;height:100%;
+}
+.box canvas{
+    position: absolute;left:0;top:0;
+    background:#eee;
+    /*background: rgba(112, 112, 112, 0.6)*/
+}
+.son{
+    display:none;
+    /*background:#ccc;*/
+    color:#000;
+}
+
+.son li:hover{
+    background:#ce8483;;
+    color:#fff;
+}
+.son li{
+    color:#000;
+    font-size: 24px;
+    /*border:1px solid #343434;*/
+    background: #c0c0c0;
+}
+
+.son li:nth-child(1){transform: skew(20deg)}
+.son li:nth-child(2){transform: skew(-20deg)}
+.son li:nth-child(3){transform: skew(20deg)}
+.son li:nth-child(4){transform: skew(-20deg)}
+.son li:nth-child(5){transform: skew(20deg)}
+
+.xp{
+    width:8px;height:8px;border:1px solid #000;
+    position: absolute;left:0;top:0;
+    display: none;
+
+}
+.selectarea{
+    border:1px dotted #000;
+    position: absolute;
+    left:0;top:0;
+    display:none;
+}
+.zi{
+    color:#343434;font-size: 16px;
+    transition: color,border,rotate  3s,4s,2s ease;
+}
+.zi:hover{
+    color:#008E94;
+    border-bottom:3px double #aaa;
+    transform:rotate(360deg);
+}
+
+.tool{
+    width:100px;height:auto;position:absolute;display: none;
+    left:-100px;text-align: center;
+    font-size: 28px;color:#000;line-height: 48px;font-weight:800;
+}
+.shapes{width:100%;height:auto;float:left;margin-bottom: 5px;}
+.type{width:100%;height:auto;float:left;margin-bottom: 5px;}
+.lineWidth{width:100%;height:auto;float:left;margin-bottom: 5px;}
+.xpsize{width:100%;height:auto;float:left;margin-bottom: 5px;}
+.file{width:100%;height:auto;float:left;margin-bottom: 5px;}
+
+
+.gongju{
+    width:48px;height:48px;float:left;background:#fff;border:1px solid #343434;border-radius: 50%;
+    text-align: center;font-size: 28px;color:#000;line-height: 48px;font-weight:800;
+    transition: scale 4s ease;
+}
+.box .gongju:hover{transform: rotate(360deg);background:#c0c0c0;color:#fff;}
+.xuan{width:36px;height:36px;border:1px dotted #000;text-align: center;margin:5px auto;position: relative}
+.cun{width:600px ;height:350px;position: absolute;top:200px;left:320px;
+    background: url(../images/baocun.png) no-repeat center center;display: none;}
+.close{width:30px;height:30px;float:right;line-height:30px;font-size:30px;margin-top:-30px;border-radius: 5px;}
+.close:hover{background: #fff;color:#fff;}
+.pan{width:220px;height:30px;position: absolute;bottom:100px;left:260px;}
+.y{width:100px;height:30px;float:left;}
+.n{width:100px;height:30px;float:left;}
+.tx{position: absolute;top:100px;left:260px;font-size: 24px;}

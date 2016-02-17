@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/canvas.css">
+    <link rel="stylesheet" href="css/font.css"/>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/shape.js"></script>
+    <script src="js/canvas.js"></script>
+    <title>Document</title>
+    <script>
+
+    </script>
+</head>
+<body>
+<div class="xuanze">工具栏</div>
+<div class="container">
+    <ul class="menu">
+        <li class="parent hasson">
+            <div class="zi">文件</div>
+            <ul class="son file menu1">
+                <li data-role1="xinjian" icon-pos="left" title="新建"></li>
+                <li data-role1="chexiao" title="返回"></li>
+                <li data-role1="baocun" title="保存"></li>
+            </ul>
+        </li>
+
+        <li class="parent hasson shapes">
+            <div class="zi">画图</div>
+            <ul class="son shapes menu1">
+                <li data-role="line" data-role1="xxian" title="直线"></li>
+                <li data-role="rect" data-role1="juxing" title="矩形"></li>
+                <li data-role="circle" data-role1="yuan" title="圆"></li>
+                <li data-role="pen" data-role1="qianbi" title="铅笔"></li>
+                <li data-role="five" data-role1="wujiaoxing" title="五角星"></li>
+            </ul>
+        </li>
+
+        <li class="parent hasson">
+            <div class="zi">类型</div>
+            <ul class="son type menu1">
+                <li data-role="stroke" data-role1="xxian" title="画线"></li>
+                <li data-role="fill" data-role1="tiaose" title="填充"></li>
+            </ul>
+        </li>
+
+        <li class="parent">
+            <div class="zi">线条的颜色</div>
+            <div title="线条的颜色" class="lineColor"><input type="color"></div>
+
+        </li>
+
+        <li class="parent">
+            <div class="zi">填充的颜色</div>
+            <div title="填充的颜色" class="fillColor"><input type="color"></div>
+
+        </li>
+
+        <li class="parent hasson">
+            <div class="zi">线条的宽度</div>
+            <ul class="son lineWidth menu1">
+                <li data-role="1" data-role1="xxian" title="细"></li>
+                <li data-role="4" data-role1="zhong" title="中"></li>
+                <li data-role="8" data-role1="cun" title="粗"></li>
+            </ul>
+        </li>
+
+        <li class="parent hasson">
+            <div class="zi">橡皮</div>
+            <ul class="son xpsize menu1">
+                <li data-role="8" data-role1="xx" title="小"></li>
+                <li data-role="16" data-role1="xz" title="中"></li>
+                <li data-role="32" data-role1="xd" title="大"></li>
+            </ul>
+        </li>
+
+        <li class="parent">
+            <div class="select zi">选择</div>
+        </li>
+    </ul>
+    <div class="yin"></div>
+    <div class="box">
+        <div class="tool">
+
+            <ul class="shapes">
+            <li class="gongju xian" data-role="line" data-role1="xxian" title="直线"></li>
+            <li class="gongju" data-role="rect" data-role1="juxing" title="矩形"></li>
+            <li class="gongju" data-role="circle" data-role1="yuan" title="圆"></li>
+            <li class="gongju" data-role="pen" data-role1="qianbi" title="铅笔"></li>
+            <li class="gongju" data-role="five" data-role1="wujiaoxing" title="五角星"></li>
+        </ul>
+        <ul class="type">
+            <li class="gongju" data-role="stroke" data-role1="xxian" title="画线"></li>
+            <li class="gongju" data-role="fill" data-role1="tiaose" title="填充"></li>
+        </ul>
+        <ul class="lineWidth">
+                <li class="gongju" data-role="1" data-role1="xxian" title="细"></li>
+                <li class="gongju" data-role="4" data-role1="zhong" title="中"></li>
+                <li class="gongju" data-role="8" data-role1="cun" title="粗"></li>
+        </ul>
+
+        <ul class="xpsize">
+            <li class="gongju" data-role="8" data-role1="xx" title="小"></li>
+            <li class="gongju" data-role="16" data-role1="xz" title="中"></li>
+            <li class="gongju" data-role="32" data-role1="xd" title="大"></li>
+        </ul>
+
+        <ul class="lineColor">
+            <div title="线条的颜色" class="lineColor"><input type="color"></div>
+        </ul>
+        <ul class="fillColor">
+            <div title="背景的颜色" class="fillColor"><input type="color"></div>
+        </ul>
+
+
+
+
+
+        </div>
+        <!--<ul class="tool shapes">   -->
+            <!--<li class="gongju" data-role="stroke" data-role1="xxian" title="画线"></li>-->
+            <!--<li class="gongju" data-role="fill" data-role1="tiaose" title="填充"></li>-->
+            <!--<li class="gongju" data-role="1" data-role1="xxian" title="细"></li>-->
+            <!--<li class="gongju" data-role="4" data-role1="zhong" title="中"></li>-->
+            <!--<li class="gongju" data-role="8" data-role1="cun" title="粗"></li>-->
+            <!--<li class="gongju" data-role="8" data-role1="xx" title="小"></li>-->
+            <!--<li class="gongju" data-role="16" data-role1="xz" title="中"></li>-->
+            <!--<li class="gongju" data-role="32" data-role1="xd" title="大"></li>-->
+            <!--<li class="gongju" ><div class="xuan"></div></li>-->
+            <!--<li class="gongju lineColor"><input type="color"></li>-->
+            <!--<li class="gongju fillColor"><input type="color"></li>-->
+        <!--</ul>-->
+
+        <div class="copy"></div>
+        <canvas></canvas>
+        <div class="xp"></div>
+        <div class="selectarea"></div>
+    </div>
+
+    <div class="cun" style="z-index:99;">
+        <div class="close" data-role1="close"></div>
+        <div class="tx"><h4>是否保存?</h4></div>
+        <div class="pan">
+        <div class="y"><input type="submit" value="确定" /></div>
+        <div class="n"><input type="submit" value="取消"/></div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
